@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<!-- Body -->
+  <div id="wrapper">
+    <div class="wrapper-inner">
+	  {% include 'partial_menu.html' %}
+    <!-- Feature -->
+      <div class="bg_cont">
+      <!-- Maintop -->
+      <!-- Main Content row -->
+        <div id="content-row">
+          <div class="row-container">
+            <div class="container">
+              <div class="content-inner row">
+                <!-- Left sidebar -->
+                  <div id="component" class="span8">
+                  <!-- Breadcrumbs -->
+                    <div class="page-item page-item__gallery">
+                  		<div class="item_header">
+                    		<h3 class="item_title">
+                          <span class="item_title_part0">Our</span> <span class="item_title_part1">Team</span>
+                        </h3>
+                      </div>
+                    	<div class="item_fulltext">
+                        <div class="category_desc">
+<div class="item_img img-intro img-intro__left"><img class="BWFilter BWfade" style="position: absolute; top: 0px; left: 0px; display: none; -webkit-filter: grayscale(100%); width: 168px; height: 200px;" src="{% static 'images/staff0.jpg' %}" alt="" width="168" height="200"> <img src="{% static 'images/staff0.jpg' %}" alt=""></div>
+<h1>Dr. Kim</h1>
+<p>Hi, I am Dr. Kim. I am orginially from the Midwest, but am very excited to be back in the Salinas Valley area to be part of this wonderful community! I graduated from Loma Linda University in Southern California for my Doctorate degree in Dental Surgery (DDS) and am very proud to be an owner of this great dental office. Growing up I always knew that being a dentist was something that I always wanted. Both of my parents were a dental lab technician so I was surrounded by dentistry, and I was always good with my hands building things and playing musical instruments. Also with the passion I have for helping people, I knew that this profession was the perfect fit.</p>
+<p>I condsider myself very lucky because I really do love what I do. For me, dentistry is just not my occupation, but my passion and I am always educating myself with the best continuning education courses so that I can provide the best care for my patients. I personally try to treat every patient as if I was treating one of my family members, always giving them the best option and treating them with gentle care. Patients are always given our time and our attention at my office because I feel that they are the most important part of our office.</p>
+<p>Beside helping people at my office, I enjoy spending time with my wife ,Cindy (who also is a dentist) and our dog Tobey. Some of my hobbies include guitar, basketball, and hiking around the beautiful places in the bay area. I am also very involved in doing dental mission work throughout different parts of the world. So far I have traveled to Mexico, China, Fiji, Kiribati Islands, and Cambodia providing free dental care to those who really need it.</p>
+</div>
+<div class="category_desc">
+<div class="item_img img-intro img-intro__left"><img class="BWFilter BWfade" style="position: absolute; top: 0px; left: 0px; display: none; -webkit-filter: grayscale(100%); width: 168px; height: 200px;" src="{% static 'images/leanna.jpg' %}" alt="" width="168" height="200"> <img src="{% static 'images/leanna.jpg' %}" alt=""></div>
+<h1>Dr. Leanna</h1>
+<p>Dr. Leanna recently relocated from Southern California where she received her DDS degree from Loma Linda University School of Dentistry. She received her bachelor’s degree at the University of California, San Diego where she studied Biology and classical music (violin). In her free time she enjoys running, weight training, and exploring beaches. This last April she participated in the Guam International Full Marathon 2017. In 2016 she signed on for physique coaching from a Bodybuilding.com athlete. She believes that every patient should be treated with dignity, respect and honesty just as God would have us treat each other. She says that every day she is saving lives one tooth at a time.</p>
+</div>
+                      </div>
+    		            </div>
+                  </div>
+                  {% include 'partial_hours.html' %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

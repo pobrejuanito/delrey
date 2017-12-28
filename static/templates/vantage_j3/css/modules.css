@@ -1,0 +1,318 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+@import url(../warp/css/modules.css);
+
+
+
+/* General
+----------------------------------------------------------------------------------------------------*/
+
+/*logo*/
+.logo-img{background-size: contain}
+
+/* Module Badges
+----------------------------------------------------------------------------------------------------*/
+
+.module .badge {
+	width: 45px;
+	height: 45px;
+	background-image: url(../images/widget/module_badges.png);
+	background-repeat: no-repeat;
+}
+
+.module.badge-hot, .module.badge-top, .module.badge-free, .module.badge-new{
+	padding: 20px; margin: 20px 15px; 
+    border: 1px solid #FFFFFF;  
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+         -o-border-radius: 4px;
+            border-radius: 4px;
+		-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+		-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+		-ms-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+		-o-box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+		box-shadow: 0 2px 5px rgba(0,0,0,0.15);} 
+}
+
+.module .badge-hot { background-position: 0 0;}
+.module .badge-new { background-position: 0 -46px;}
+.module .badge-free { background-position: 0 -92px;}
+.module .badge-top { background-position: 0 -138px;}
+
+#sidebar-a .module .module-title .icon, 
+#sidebar-b .module .module-title .icon
+{top: 7px;}
+
+.module .module-title .icon{
+    top: 3px;
+}
+
+.mod-nomargin {
+    margin: 0;
+}
+
+/* Module Icons
+----------------------------------------------------------------------------------------------------*/
+
+.module .module-title .icon { background: url(../images/module_icons.png) 0 0 no-repeat; }
+.module .module-title .icon-download { background-position: 0 0; }
+.module .module-title .icon-twitter { background-position: 0 -30px; }
+.module .module-title .icon-mail { background-position: 0 -60px; }
+.module .module-title .icon-bubble { background-position: 0 -90px; }
+.module .module-title .icon-login { background-position: 0 -120px; }
+.module .module-title .icon-cart { background-position: 0 -150px; }
+
+.wk-twitter-single .content{
+   font-size: 17px;
+    line-height: 27px;
+}
+
+.wk-twitter-single p {
+font-style: normal;
+}
+
+/* Search module
+----------------------------------------------------------------------------------------------------*/
+.searchbox{background-color: #FFFFFF; }
+.searchbox:hover{background-color: #FEFEFE;}
+.searchbox:focus{background-color: #FFFFFF;}
+.search-icon{background: url(http://stonecreekvillagedentistry.com/templates/vantage_j3/images/searchbox_magnifier.png) 0 0 repeat-x transparent; height: 16px; width: 16px; position: absolute; left: 8px;
+top: 6px;}
+
+/* Module Type: Box
+----------------------------------------------------------------------------------------------------*/
+
+.mod-box {
+	padding: 15px 10px;
+}
+
+.mod-box .badge { 
+    top: -1px; 
+    right: -1px;
+}
+.mod-box.slogan{padding: 5px 10px}
+
+/* Module Type: styled modules
+----------------------------------------------------------------------------------------------------*/
+
+.mod-color, .mod-white, .mod-dark{
+    margin-bottom: 15px; 
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;  
+    box-sizing: border-box;
+}
+
+
+.mod-color p, .mod-white p, .mod-dark p {margin: 5px; }
+.mod-color .module-title, .mod-white .module-title, .mod-dark .module-title{margin: 5px;}
+
+.color-content{
+    padding: 0; 
+    overflow: hidden; 
+    position: relative; 
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px; 
+    -ms-border-radius: 5px; 
+    -o-border-radius: 5px; 
+    border-radius: 5px;}
+
+.color-content p, .color-content h3{padding: 12px 15px 10px}
+.color-content .button{margin: 10px 1px 4px 0;}
+.mod-color{text-shadow: none;
+ background-image: url(../images/body/mod-block.png);
+ background-repeat: no-repeat;
+ background-position: 0 0;
+-webkit-box-shadow: 0 0 1px #FFFFFF inset !important;
+   -moz-box-shadow: 0 0 1px #FFFFFF inset !important;
+        box-shadow: 0 0 1px #FFFFFF inset !important;
+}
+
+.latest{
+margin: 4px 10px 6px 0;
+width: 48px;
+height: 48px;
+}
+
+/*sidebar a*/
+.module-title, #content h3.module-title, #system h1.title, #yoo-zoo .item h1.pos-title {
+    background: url(../images/body/hr-dotted.png) repeat-x scroll center bottom transparent;
+    line-height: 38px;
+    padding: 0 0 5px 0;
+    margin-left: 0;
+}
+
+#yoo-zoo .item h1.pos-title {
+    margin: 10px 0 20px;
+    padding-bottom: 15px;
+}
+
+.module-title, #content h3.module-title{
+    white-space: pre-wrap;
+}
+
+#content h3.module-title {
+    margin: 0 0 9px !important;
+    padding: 5px 0 5px !important;
+}
+
+#content .meta{
+    background: url(../images/body/hr-dotted.png) repeat-x scroll center bottom transparent;
+}
+
+#content header {
+    padding-bottom: 2px;
+    padding-top: 15px;
+    margin-left: 0;
+    margin-bottom: 15px;
+}
+
+#content .yoo-zoo header{
+    margin-left: 0;
+}
+
+/*header texture*/
+.no-header, .no-header .header-glare{background: none !important;}
+
+/*background texture*/
+
+/*body background textures*/
+.bg_texture_0, .footer_texture_0{background-image: none;}
+.bg_texture_1, .content_texture_1, .mid_texture_1{background: url(../images/texture/1.jpg) repeat scroll top left #F2F2F2;}
+.bg_texture_2, .content_texture_2, .mid_texture_2{background: url(../images/texture/2.jpg) repeat scroll top left #F2F2F2;}
+.bg_texture_3, .content_texture_3, .mid_texture_3{background: url(../images/texture/3.jpg) repeat scroll top left #F2F2F2;}
+.bg_texture_4, .content_texture_4, .mid_texture_4{background: url(../images/texture/4.jpg) repeat scroll top left #F2F2F2;}
+.bg_texture_5, .content_texture_5, .mid_texture_5{background: url(../images/texture/5.jpg) repeat scroll top left #F2F2F2;}
+.bg_texture_6, .content_texture_6, .mid_texture_6{background: url(../images/texture/6.jpg) repeat scroll top left #F2F2F2;}
+.bg_texture_7, .content_texture_7, .mid_texture_7{background: url(../images/texture/7.jpg) repeat scroll top left #F2F2F2;}
+.bg_texture_8, .content_texture_8, .mid_texture_8{background: url(../images/texture/8.jpg) repeat scroll top left #F2F2F2;}
+.bg_texture_9, .content_texture_9, .mid_texture_9{background: url(../images/texture/9.jpg) repeat scroll top left #F2F2F2;}
+.bg_texture_10, .content_texture_10, .mid_texture_10{background: url(../images/texture/10.jpg) repeat scroll top left #F2F2F2;}
+.bg_texture_11, .content_texture_11, .mid_texture_11{background: url(../images/texture/11.jpg) repeat scroll top left #F2F2F2;}
+.bg_texture_25, .mid_texture_12, .content_texture_12{background: url(../images/texture/25.png) repeat scroll top left #f2f2f2;}
+
+/*mid background textures*/
+.content_texture_t{background-image: none}
+
+/*mid background textures*/
+
+#content .width50 header{
+    margin-left: 0;
+    background-position: 90% 100%
+}
+
+#content .width33 header{
+    margin-left: 0;
+    background-position: 90% 100%
+}
+
+/*title*/
+#system .item h3{
+    padding-bottom: 15px;
+}
+
+#system .title{
+	padding-left: 0;
+}
+
+#system .width50 .title{
+    padding-left: 0;
+}
+
+#system h1.title{
+    padding-left: 0; 
+    padding-bottom: 13px;
+}
+
+.yoo-zoo h1.title{
+    background: none !important;
+    padding-bottom: 0 !important;
+}
+
+#system .contact-head{
+    margin-top: -25px;
+}
+
+#system .contact-head h3{
+    padding-bottom: 0;
+}
+
+/*login*/
+div.responseContainer{
+    background-color: transparent;
+    color: #FFF;
+    padding: 0 !important;
+    margin: 0 !important;
+    position: relative;
+    display: block;
+    top: 22px;
+    left: 11px;
+    height: 0 !important;
+}
+
+.section-title {
+    border-radius: 4px 0 0 0;
+    font-size: 24px;
+    height: 38px;
+    margin-left: 1px !important;
+    margin-top: 1px;
+    padding: 21px 18px 0;
+    text-shadow: none;
+}
+
+.module .module-title span.subtitle {
+    margin-top: -3px;
+    margin-bottom: 7px;
+}
+
+#bottom-c{
+    margin: 0;
+    padding: 0;
+}
+
+.footer-body{
+    position:relative; 
+    text-shadow: none; 
+    display: table; 
+    width: 100%;
+    margin-top: 20px;
+}
+
+#system #comments .comment-head .author{
+    font-weight: normal;
+}
+
+/*google maps*/
+#g-map {
+border-bottom: 4px solid rgba(0, 0, 0, 0.1);
+border-top: 2px solid rgba(0,0,0,0.1);
+overflow: hidden;
+position: relative;
+}
+
+#g-map .module{margin: 0;}
+.map-shadow { 
+    display: inline-block; 
+    height: 12px; 
+    position: absolute; 
+    top: 0; 
+    z-index: 5;
+}
+
+/*login module overrides*/
+form.short div.button {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+/*icon feature*/
+.icon-feature{
+    display: block;
+    float: left;
+    padding: 0 15px 0 0;
+}
+
+.icon-envelope, .icon-print {
+    margin-top: 2px;
+}

@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<!-- mid block -->
+<div id="mid-block" class="s">
+    <div class="mid-gradient">
+
+        <!-- breadcrumbs -->
+        <section id="breadcrumbs">
+                <div class="wrapper grid-block">
+                <a href="/" class="home"></a>
+                <div class="breadcrumbs"><a href="/">Home</a><i class="uk-icon-chevron-right"></i><span>Our Practice</span><i class="uk-icon-chevron-right"></i><strong>Maps &amp; Hours </strong></div>						</div>
+        </section>
+
+    </div>
+</div>
+<div class="mid-divide"></div>
+<div class="wrapper grid-block content-texture ">
+    <div id="main" class="grid-block">
+        <div id="maininner" class="grid-box">
+
+            <section id="content" class="grid-block">
+                <div id="system">
+
+                        <article class="item">
+
+                                <header>
+                            
+                                    <h1 class="title">Directions to office</h1>
+                            
+                                </header>
+                            
+                                <div class="content clearfix">
+                        
+                                    <h3>Directions to our office</h3>
+                                    <p><iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3203.8194293477145!2d-121.82852900000002!3d36.58256899999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808de540b80f6c4f%3A0xc6d009e3a4e5b330!2s463+Canyon+Del+Rey+Blvd!5e0!3m2!1sen!2sus!4v1399520038104" width="600" height="450" frameborder="0"></iframe></p>
+                                    <p>We offer reserved parking for our patients! </p>
+                                    <p> <img style="margin: 15px;" src="{% static 'images/parkfront.JPG' %}" alt="" width="296" height="235" />
+                                        <img style="margin: 15px;" src="{% static 'images/parkside.JPG' %}" alt="" width="389" height="292" /></p>
+                                </div>
+                            
+                        </article>
+
+                </div>
+            </section>
+
+        </div>
+    </div>
+</div>
+<!-- main end -->
+{% endblock %}

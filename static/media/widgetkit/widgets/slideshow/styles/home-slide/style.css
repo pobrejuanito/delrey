@@ -1,0 +1,114 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/*
+ * Widgetkit Slideshow: home-slide Style
+ */
+
+.wk-slideshow-home{
+	margin: 0 0 0 35px;
+}
+
+
+/* Navigation
+----------------------------------------------------------------------------------------------------*/
+.wk-slideshow-home .nav li {
+	display: inline-block;
+	margin: 5px 2px 0 5px;
+}
+.wk-slideshow-home .nav li:first-child { margin-left: 0; }
+.wk-slideshow-home .nav span {
+	border: 1px solid rgba(255,255,255,0.35);
+	background: rgba(255,255,255, 0.3) !important;
+	-webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, .4);
+	   -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, .4);
+	        box-shadow: 0 0 0 1px rgba(0, 0, 0, .4);
+	-webkit-transition: all .4s linear;
+	   -moz-transition: all .4s linear;
+	        transition: all .4s linear;
+	width: 11px;
+	height: 11px;
+	-webkit-border-radius: 2px;
+	   -moz-border-radius: 2px;
+	    -ms-border-radius: 2px;
+	     -o-border-radius: 2px;
+	        border-radius: 2px;
+	overflow: hidden;
+	margin-top: 1px;
+}
+.wk-slideshow-home .nav span:hover { background: rgba(255,255,255, 0.75) !important; }
+.wk-slideshow-home .nav span:active { width: 12px; }
+.wk-slideshow-home .nav .active span { width: 20px; }
+
+/* Buttons
+----------------------------------------------------------------------------------------------------*/
+
+.wk-slideshow-home > div { position: relative; }
+
+.next, .prev{display: none;}
+.wk-slideshow-home > div .next,
+.wk-slideshow-home > div .prev {
+	background-color: rgba(255, 255, 255, 0.95) !important;
+	-webkit-border-radius: 20px;
+	   -moz-border-radius: 20px;
+	    -ms-border-radius: 20px;
+	     -o-border-radius: 20px;
+	        border-radius: 20px;
+	 -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.4) inset;
+	    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.4) inset;
+	         box-shadow: 0 0 1px rgba(0, 0, 0, 0.4) inset;
+	-webkit-transition: all .3s linear;
+	   -moz-transition: all .3s linear;
+	        transition: all .3s linear;
+	display: block;
+	text-align: center;
+	top: 50%;
+	z-index: 10;
+	color: #FFF;
+	width: 35px;
+	height: 35px
+	
+}
+
+.wk-slideshow-home > div .next {
+	right: 0;
+	padding: 1px 1px 0 0
+}
+
+.wk-slideshow-home > div .prev {
+	left: -35px;
+	padding: 1px 0 0 1px
+}
+
+.wk-slideshow-home > div .next:hover,
+.wk-slideshow-home > div .prev:hover{
+		background-color: rgba(255, 255, 255, 0.55) !important;
+}
+
+/* caption
+----------------------------------------------------------------------------------------------------*/
+.wk-slideshow-home .arrows {display: block; position: absolute;}
+
+.caption h2,
+.caption h3,
+.caption h4
+{
+	font-size: 40px; 
+	line-height: 1.5; 
+	margin: 0;
+	padding: 5px 15px 5px 10px;
+}
+
+.caption p {padding: 15px; margin: 0}
+.caption a.button-color {margin: 0 15px 15px 0}
+.wk-slideshow .caption a{text-decoration: none !important;}
+#lightbox-title.lightbox-title-float {font-weight: normal}
+
+/* Responsive
+
+----------------------------------------------------------------------------------------------------*/
+
+/* Only Touch Devices */
+@media (max-device-width: 1024px) {
+	.wk-slideshow-home .next,
+	.wk-slideshow-home .prev { display: none; }
+	}

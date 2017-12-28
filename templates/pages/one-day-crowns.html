@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<!-- mid block -->
+<div id="mid-block" class="s">
+    <div class="mid-gradient">
+
+        <!-- breadcrumbs -->
+        <section id="breadcrumbs">
+                <div class="wrapper grid-block">
+                <a href="http://stonecreekvillagedentistry.com" class="home"></a>
+                <div class="breadcrumbs"><a href="/">Home</a><i class="uk-icon-chevron-right"></i><span>Our Practice</span><i class="uk-icon-chevron-right"></i><strong>Patient Testimonials</strong></div>						</div>
+            </section>
+
+    </div>
+</div>
+<div class="mid-divide"></div>
+<div class="wrapper grid-block content-texture ">
+    <div id="main" class="grid-block">
+        <div id="maininner" class="grid-box">
+
+            <section id="content" class="grid-block">
+                <div id="system">
+
+                        <article class="item">
+
+                                <header>
+                            
+                                    <h1 class="title">A Crown in ONE Appointment!</h1>
+                            
+                                </header>
+                            
+                                <div class="content clearfix">
+                            
+                                    <p><img src="{% static 'images/front_slideshow4.jpg' %}" alt="" border="0" class="size-auto"></p>
+                                    <h2>Are you too busy for two dental visits?</h2>
+                                    <p style="font-size: 18px;">We love having the CEREC solution in our practice because our PATIENTS love it! Why? Because before, crowns were completed in multiple visits. During the first visit, after a tooth impression was taken, a dental lab made the crown while you wore a temporary crown for a couple of weeks. CEREC crowns are completed in one visit. And, they’re not only faster, but they’re beautiful and strong too.</p>
+                                    <h2>What is CEREC?</h2>
+                                    <p style="font-size: 18px;">CEREC is an acronym for Chairside Economical Restoration of Esthetic Ceramics, or CERamic REConstruction. Translated, it means that a we can economically restore damaged teeth in a single appointment using a high-quality ceramic material that matches the natural color of other teeth.</p>
+                                    <h2>How does the instrument work?</h2>
+                                    <p style="font-size: 18px;">CEREC uses CAD/CAM (Computer Aided Design/Computer Aided Manufacturing) technology, incorporating a camera, computer and milling machine in one instrument. A special camera is used to take an accurate picture of the damaged tooth. This optical impression is transferred and displayed on a color computer screen, where we use CAD technology to design the restoration. Then CAM takes over and automatically creates the restoration while the patient waits. Finally, we bond the new restoration to the surface of the old tooth. The whole process takes about one hour.</p>
+                                    <p style="font-size: 18px;"><a title="Make an appointment today!" href="tel:831-920-6900" target="_self">Make and appointment today! 831-920-6900</a></p>
+                                </div>
+                            
+                            </article>
+
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<!-- main end -->
+{% endblock %}

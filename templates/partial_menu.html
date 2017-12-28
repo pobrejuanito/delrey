@@ -1,0 +1,95 @@
+{% load staticfiles %}
+<div class="bg_top">
+  <!-- Top -->
+        <div id="top-row">
+      <div class="row-container">
+        <div class="container">
+          <div id="top" class="row">
+            <div class="moduletable navigation  span12">
+<ul class="sf-menu">
+<li class="item-101"><a href="/" >Main</a></li>
+<li class="item-169 deeper dropdown parent"><a href="/about.html" >About</a>
+  <ul class="sub-menu"><li class="item-278"><a href="/our-team.html" >Our Doctors</a></li>
+    <li class="item-291"><a href="/our-staff.html" >Our Staff</a></li>
+  </ul>
+</li>
+<li class="item-109"><a href="/braces.html" >6 Month Braces</a></li>
+<li class="item-173 deeper dropdown parent"><a href="/bonding.html" >Services</a>
+  <ul class="sub-menu"><li class="item-279"><a href="/bonding.html" >Bond &amp; Fill</a></li>
+    <li class="item-280"><a href="/bridges.html">Bridges</a></li>
+    <li class="item-281"><a href="/crowns.html">Crowns</a></li>
+    <li class="item-282"><a href="/dentures.html">Dentures</a></li>
+    <li class="item-283"><a href="/extractions.html">Extractions</a></li>
+    <li class="item-284"><a href="/whitening.html">Whitening</a></li>
+    <li class="item-285"><a href="/implants.html">Implants</a></li>
+    <li class="item-286"><a href="/guards.html">Night Guards</a></li>
+    <li class="item-287"><a href="/veneers.html">Veneers</a></li>
+    <li class="item-288"><a href="/tmj.html">TMJ</a></li></ul></li>
+    <li class="item-102"><a href="/contact.html">Contact</a></li>
+  </ul>
+
+<script type="text/javascript">
+// initialise plugins
+jQuery(function(){
+  jQuery('ul.sf-menu')
+
+  .superfish({
+    hoverClass:    'sfHover',
+    pathClass:     'overideThisToUse',
+    pathLevels:    1,
+    delay:         500,
+    animation:     {opacity:'show', height:'show'},
+    speed:         'normal',
+    speedOut:      'fast',
+    autoArrows:    false,
+    disableHI:     false,
+    useClick:      0,
+    easing:        "swing",
+    onInit:        function(){},
+    onBeforeShow:  function(){},
+    onShow:        function(){},
+    onHide:        function(){},
+    onIdle:        function(){}
+  });
+      jQuery('.sf-menu').mobileMenu({
+    defaultText: 'Navigate to...',
+    className: 'select-menu',
+    subMenuClass: 'sub-menu'
+  });
+
+  var ismobile = navigator.userAgent.match(/(iPhone)|(iPod)|(android)|(webOS)/i)
+  if(ismobile){
+    jQuery('.sf-menu').sftouchscreen({});
+  }
+  jQuery('.btn-sf-menu').click(function(){
+    jQuery('.sf-menu').toggleClass('in')
+  });
+})
+</script>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Header -->
+    <div id="header-row">
+      <div class="row-container">
+        <div class="container">
+          <header>
+            <div class="row">
+                <!-- Logo -->
+                <div id="logo" class="span12">
+                  <a href="/">
+                    <img src="{% static 'images/ss_logo_fit.png' %}" alt="James D. Kim DDS Family Dentistry, SalinasSmiles Dental Group" />
+                  </a>
+                </div>
+
+            </div>
+          </header>
+        </div>
+      </div>
+    </div>
+  <!-- Navigation -->
+  <!-- Showcase -->
+</div>

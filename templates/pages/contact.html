@@ -1,0 +1,227 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<!-- Body -->
+  <div id="wrapper">
+    <div class="wrapper-inner">
+	  {% include 'partial_menu.html' %}
+    <!-- Feature -->
+      <div class="bg_cont">
+      <!-- Maintop -->
+      <!-- Main Content row -->
+        <div id="content-row">
+          <div class="row-container">
+            <div class="container">
+              <div class="content-inner row">
+                <!-- Left sidebar -->
+                  <div id="component" class="span8">
+                  <!-- Breadcrumbs -->
+                    <div class="page page-contact page-contact__">
+                  		<div class="item_header">
+                    		<h3 class="item_title">
+                          <span class="item_title_part0">Contact Us</span>
+                        </h3>
+                      </div>
+                      <!-- Contact name -->
+          <div class="contact_map" id="contact_map">
+
+<!-- Plugin Google Maps version 3.1 by Mike Reumer
+// url base(): http://www.salinassmiles.com (16330 KB)
+// url base(true):  (16330 KB)
+// Protocol: http:// (16330 KB)
+// langtype: site (16330 KB)
+// Joomla lang: en-GB (16330 KB)
+// site lang: en (16331 KB)
+// googlewebsite: maps.google.com (16331 KB)
+// urlsetting: http_host (16331 KB)
+// url: www.salinassmiles.com (16333 KB)
+// key:  (16332 KB)
+// brackets: { (16333 KB)
+// Memory Usage Start (_process): 16367 KB (16368 KB)
+// clientgeotype: google (16399 KB)
+// get_geo(1970 N Main St, Salinas, CA 93906) (16399 KB)
+// Address: 1970 N Main St, Salinas, CA 93906 (16401 KB)
+// get_geo(http://maps.googleapis.com/maps/api/geocode/xml?address=1970+N+Main+St%2C+Salinas%2C+CA+93906&sensor=false) (16402 KB)
+// URI couldn't be opened probably ALLOW_URL_FOPEN off (16402 KB)
+// curl_init does exists (16402 KB)
+// Returned page: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;GeocodeResponse&gt;
+ &lt;status&gt;OK&lt;/status&gt;
+ &lt;result&gt;
+  &lt;type&gt;premise&lt;/type&gt;
+  &lt;formatted_address&gt;1970 N Main St, Salinas, CA 93906, USA&lt;/formatted_address&gt;
+  &lt;address_component&gt;
+   &lt;long_name&gt;1970&lt;/long_name&gt;
+   &lt;short_name&gt;1970&lt;/short_name&gt;
+   &lt;type&gt;street_number&lt;/type&gt;
+  &lt;/address_component&gt;
+  &lt;address_component&gt;
+   &lt;long_name&gt;North Main Street&lt;/long_name&gt;
+   &lt;short_name&gt;N Main St&lt;/short_name&gt;
+   &lt;type&gt;route&lt;/type&gt;
+  &lt;/address_component&gt;
+  &lt;address_component&gt;
+   &lt;long_name&gt;Salinas&lt;/long_name&gt;
+   &lt;short_name&gt;Salinas&lt;/short_name&gt;
+   &lt;type&gt;locality&lt;/type&gt;
+   &lt;type&gt;political&lt;/type&gt;
+  &lt;/address_component&gt;
+  &lt;address_component&gt;
+   &lt;long_name&gt;Monterey County&lt;/long_name&gt;
+   &lt;short_name&gt;Monterey County&lt;/short_name&gt;
+   &lt;type&gt;administrative_area_level_2&lt;/type&gt;
+   &lt;type&gt;political&lt;/type&gt;
+  &lt;/address_component&gt;
+  &lt;address_component&gt;
+   &lt;long_name&gt;California&lt;/long_name&gt;
+   &lt;short_name&gt;CA&lt;/short_name&gt;
+   &lt;type&gt;administrative_area_level_1&lt;/type&gt;
+   &lt;type&gt;political&lt;/type&gt;
+  &lt;/address_component&gt;
+  &lt;address_component&gt;
+   &lt;long_name&gt;United States&lt;/long_name&gt;
+   &lt;short_name&gt;US&lt;/short_name&gt;
+   &lt;type&gt;country&lt;/type&gt;
+   &lt;type&gt;political&lt;/type&gt;
+  &lt;/address_component&gt;
+  &lt;address_component&gt;
+   &lt;long_name&gt;93906&lt;/long_name&gt;
+   &lt;short_name&gt;93906&lt;/short_name&gt;
+   &lt;type&gt;postal_code&lt;/type&gt;
+  &lt;/address_component&gt;
+  &lt;address_component&gt;
+   &lt;long_name&gt;2036&lt;/long_name&gt;
+   &lt;short_name&gt;2036&lt;/short_name&gt;
+   &lt;type&gt;postal_code_suffix&lt;/type&gt;
+  &lt;/address_component&gt;
+  &lt;geometry&gt;
+   &lt;location&gt;
+    &lt;lat&gt;36.7197852&lt;/lat&gt;
+    &lt;lng&gt;-121.6554903&lt;/lng&gt;
+   &lt;/location&gt;
+   &lt;location_type&gt;ROOFTOP&lt;/location_type&gt;
+   &lt;viewport&gt;
+    &lt;southwest&gt;
+     &lt;lat&gt;36.7184362&lt;/lat&gt;
+     &lt;lng&gt;-121.6568393&lt;/lng&gt;
+    &lt;/southwest&gt;
+    &lt;northeast&gt;
+     &lt;lat&gt;36.7211342&lt;/lat&gt;
+     &lt;lng&gt;-121.6541413&lt;/lng&gt;
+    &lt;/northeast&gt;
+   &lt;/viewport&gt;
+   &lt;bounds&gt;
+    &lt;southwest&gt;
+     &lt;lat&gt;36.7196810&lt;/lat&gt;
+     &lt;lng&gt;-121.6555902&lt;/lng&gt;
+    &lt;/southwest&gt;
+    &lt;northeast&gt;
+     &lt;lat&gt;36.7198894&lt;/lat&gt;
+     &lt;lng&gt;-121.6553904&lt;/lng&gt;
+    &lt;/northeast&gt;
+   &lt;/bounds&gt;
+  &lt;/geometry&gt;
+  &lt;place_id&gt;ChIJhQvByRP_jYARP1NjnPtX0dM&lt;/place_id&gt;
+ &lt;/result&gt;
+&lt;/GeocodeResponse&gt;
+ (16410 KB)
+// Coordinates: 36.7197852, -121.6554903 (16410 KB)
+// Memory Usage End: 16410 KB (43 KB) (16410 KB)
+--><!-- fail nicely if the browser has no Javascript -->
+				<noscript><blockquote class='warning'><p><b>JavaScript must be enabled in order for you to use Google Maps.</b> <br/>However, it seems JavaScript is either disabled or not supported by your browser. <br/>To view Google Maps, enable JavaScript by changing your browser options, and then try again.</p></blockquote></noscript><div id='mapbody1_2brgp_0' style="display: none; text-align:center"><div id="googlemap1_2brgp_0" class="map" style="margin-right: auto; margin-left: auto; width:100%; height:100%;"></div><div id="dirsidebar1_2brgp_0" class='directions' ></div></div>
+        <script type="text/javascript">/*<![CDATA[*/
+        var mapconfig1_maoo4_0 = {"debug":"1","visualrefresh":"0","show":"1","mapclass":"","loadmootools":"0","timeinterval":"500","googlewebsite":"maps.google.com","align":"center","width":"100%","height":"100%","effect":"none","deflatitude":"36.719823","deflongitude":"-121.6554543","centerlat":"","centerlon":"","address":"1970 N Main St, Salinas, CA 93906","latitudeid":"","latitudedesc":"1","latitudecoord":"0","latitudeform":"0","controltype":"UI","zoomtype":"None","svcontrol":"1","returncontrol":"1","zoom":"10","corzoom":"0","minzoom":"0","maxzoom":"19","rotation":"1","zoomnew":"0","zoomwheel":"1","keyboard":"0","maptype":"Normal","showmaptype":"1","shownormalmaptype":"1","showsatellitemaptype":"1","showhybridmaptype":"1","showterrainmaptype":"1","showearthmaptype":"1","showscale":"0","overview":"0","dragging":"1","marker":"1","traffic":"0","transit":"0","bicycle":"0","panoramio":"0","pano_userid":"","pano_tag":"","weather":"0","weathercloud":"0","weatherinfo":"1","weathertempunit":"celsius","weatherwindunit":"km","dir":"0","dirtype":"D","formdirtype":"0","avoidhighways":"0","avoidtoll":"0","diroptimize":"0","diralternatives":"0","showdir":"1","animdir":"0","animspeed":"1","animautostart":"0","animunit":"kilometers","formspeed":"0","formaddress":"0","formdir":"0","autocompl":"both","txtdir":"Directions: ","txtgetdir":"Get Directions","txtfrom":"From here","txtto":"To here","txtdiraddr":"Address: ","txt_driving":"","txt_avhighways":"","txt_avtoll":"","txt_walking":"","txt_bicycle":"","txt_transit":"","txt_optimize":"","txt_alternatives":"","dirdefault":"0","gotoaddr":"0","gotoaddrzoom":"0","txtaddr":"Address: ##","erraddr":"Address ## not found!","txtgotoaddr":"Goto","clientgeotype":"google","lightbox":"0","txtlightbox":"Open lightbox","lbxcaption":"","lbxwidth":"500px","lbxheight":"700px","lbxcenterlat":"","lbxcenterlon":"","lbxzoom":"","sv":"none","svwidth":"100%","svheight":"300px","svautorotate":"0","svaddress":"1","kmlrenderer":"google","kmlsidebar":"none","kmlsbwidth":"200px","kmllightbox":"0","kmlhighlite":"","proxy":"1","tilelayer":"","tilemethod":"","tileopacity":"1","tilebounds":"","tileminzoom":"0","tilemaxzoom":"19","twittername":"","twittertweets":"15","twittericon":"\/media\/plugin_googlemap2\/site\/Twitter\/twitter_map_icon.png","twitterline":"#ff0000ff","twitterlinewidth":"4","twitterstartloc":"0,0,0","lang":"en","mapType":"normal","geocoded":1,"tolat":"","tolon":"","toaddress":"","description":"","tooltip":"","kml":[],"kmlsb":[],"layer":[],"camera":[],"searchtext":"","latitude":"36.7197852","longitude":" -121.6554903","waypoints":[],"mapnm":"1_maoo4_0","descr":"0","geoxmloptions":{"titlestyle":" class=kmlinfoheader ","descstyle":" class=kmlinfodesc ","veryquiet":true,"quiet":true,"nozoom":true,"iwmethod":"click","sortbyname":null,"linktarget":"_self","linkmethod":"dblclick","lang":{"txtdir":"Directions: ","txtto":"To here","txtfrom":"From here","txtsrchnrby":"","txtzoomhere":"","txtaddrstart":"","txtgetdir":"","txtback":"","txtsearchnearby":"","txtsearch":""},"inputsize":"25"},"icontype":"","earthoptions":{"timeout":"100","borders":true,"buildings":false,"roads":false,"terrain":false,"lookat":[],"camera":[]}};
+        var mapstyled1_maoo4_0 = null;
+        var googlemap1_maoo4_0 = new GoogleMaps('1_maoo4_0', mapconfig1_maoo4_0, mapstyled1_maoo4_0);
+        /*]]>*/</script>
+          </div>
+
+
+    <!-- Address -->
+          <div class="row-fluid">
+
+
+<div class="contact_details">
+
+
+		<div class="contact_details_item span4">
+
+		<h3>			Address:		</h3>
+							<i class="icons-marker fa fa-home"></i>
+						<div class="contact_address">
+											1970 N. Main St.<br/>
+
+													Salinas<br/>
+
+													CA
+													93906<br/>
+
+								</div>
+		</div>
+
+	<div class="contact_details_item span4">
+		<h3>		Phones:		</h3>
+					<i class="icons-marker fa fa-phone"></i>
+			<div class="contact_details_telephone">
+				+1 831-424-4230			</div>
+			<div class="clearfix"></div>
+
+
+
+			</div>
+
+	<div class="contact_details_item span4">
+
+		<h3>			E-mail:		</h3>
+
+			<i class="icons-marker fa fa-envelope"></i>
+			<div class="contact_details_emailto">
+				<script type='text/javascript'>
+ <!--
+ var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+ var path = 'hr' + 'ef' + '=';
+ var addy24665 = 'c&#111;nt&#97;ct' + '&#64;';
+ addy24665 = addy24665 + 's&#97;l&#105;n&#97;ssm&#105;l&#101;s' + '&#46;' + 'c&#111;m';
+ document.write('<a ' + path + '\'' + prefix + ':' + addy24665 + '\'>');
+ document.write(addy24665);
+ document.write('<\/a>');
+ //-->\n </script><script type='text/javascript'>
+ <!--
+ document.write('<span style=\'display: none;\'>');
+ //-->
+ </script>This email address is being protected from spambots. You need JavaScript enabled to view it.
+ <script type='text/javascript'>
+ <!--
+ document.write('</');
+ document.write('span>');
+ //-->
+ </script>			</div>
+			<div class="clearfix"></div>
+
+
+				</div>
+
+
+</div>
+      </div>
+</div>
+
+
+              <!-- Content-bottom -->
+                          </div>
+                          {% include 'partial_hours.html' %}
+                      </div>
+        </div>
+      </div>
+    </div>
+    <!-- Mainbottom -->
+
+        <!-- Bottom -->
+
+
+    </div>
+
+    </div>
+  </div>
+
+{% endblock %}

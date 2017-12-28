@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<!-- Body -->
+  <div id="wrapper">
+    <div class="wrapper-inner">
+	  {% include 'partial_menu.html' %}
+    <!-- Feature -->
+      <div class="bg_cont">
+      <!-- Maintop -->
+      <!-- Main Content row -->
+        <div id="content-row">
+          <div class="row-container">
+            <div class="container">
+              <div class="content-inner row">
+                <!-- Left sidebar -->
+                  <div id="component" class="span8">
+                  <!-- Breadcrumbs -->
+                    <div class="page-item page-item__gallery">
+                  		<div class="item_header">
+                    		<h3 class="item_title">
+                          <span class="item_title_part0">Welcome!</span>
+                        </h3>
+                      </div>
+                    	<div class="item_fulltext"><h2>Friendly Staff. Beautiful Smiles. Welcoming Environment</h2>
+<p>We are always welcoming new patients and we would love to have you as part of our dental family. &nbsp;Call&nbsp;us at&nbsp;<strong>(831)-424-4230</strong></p>
+
+<p><span style="font-size: 12.1599998474121px; line-height: 1.3em;">We are dedicated to providing patients of all ages with gentle, comprehensive dentistry in a comfortable and welcoming environment. Our team understands the importance of good communication and personalized care. So we always take the time to get to know our patients and develop long-lasting relationships based on trust and profession expertise. With Dr. James Kim, you'll never be treated like "just another patient', you&nbsp;are a valued member of our practice family!</span></p>
+<p>We have equipped our beautiful office with the latest technology. Whether you're visiting us for a routine cleaning or a complete smile makeover, we promise to take great care of you.</p>
+<p>A healthy smile is important for a healthy body, and we want to help you enjoy yours for the rest of your life.</p>
+<p>Call&nbsp;(831)-424-4230 to book an appointment today!</p>
+                      </div>
+    		            </div>
+                  </div>
+                  {% include 'partial_hours.html' %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
